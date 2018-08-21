@@ -16,3 +16,5 @@ final class Review: Codable {
 
 extension Review: SQLiteModel {}
 extension Review: Migration {}
+extension Review: Content {}
+extension Review: Parameter {}

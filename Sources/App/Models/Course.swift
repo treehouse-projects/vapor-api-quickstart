@@ -12,6 +12,12 @@ final class Course: Codable {
     }
 }
 
+extension Course {
+    var reviews: Children<Course, Review> {
+        return children(\.courseID)
+    }
+}
+
 extension Course: SQLiteModel {}
 extension Course: Migration {}
 extension Course: Content {}
