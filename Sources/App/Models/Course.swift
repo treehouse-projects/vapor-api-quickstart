@@ -15,6 +15,7 @@ final class Course: Codable {
 extension Course: SQLiteModel {}
 extension Course: Migration {}
 extension Course: Content {}
+extension Course: Parameter {}
 
 
 
